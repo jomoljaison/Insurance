@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgb(212, 58, 58);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <table style="width:100%">
+        <% mint.forEach(function(user){ %>
+
+
+            <tr>
+                <th> tkid</th>
+                <th> Amount</th>
+                <th> address</th>
+                <th> uploadFile </th>
+                <th> Claimed Amt </th>
+                <th> status </th>
+
+            </tr>
+
+
+
+            <tr>
+                <td>
+                    <%= user.tkid %>
+                </td>
+                <td>
+                    <%= user.amt %>
+                </td>
+                <td>
+                    <%= user.user %>
+                </td>
+                <!-- <td><%= user.bits %></td> -->
+                <td>
+                    <%= user.uploadFile %>
+                </td></a>
+                <!-- <td><%= user.uploadbits %></td> -->
+                <td>
+                    <%= user.cash %>
+                </td></a>
+
+                <td>
+                    <%= user.enabled %>
+                </td></a>
+
+            </tr>
+
+
+
+            </tr>
+            <% }); %>
+    </table>
+</body>
+
+</html>
